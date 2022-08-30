@@ -12,7 +12,7 @@
 
 
 ## About
-A Nodejs Microservice that is able to convert between Unix time and Human readable time. This project is based on the 
+A Nodejs Microservice that is able to convert between Unix time and Human readable time. This project was proposed as a challenge in freecodecamp's "Back End Development and APIs" course.
 
 ---
 
@@ -23,13 +23,7 @@ A Nodejs Microservice that is able to convert between Unix time and Human readab
 
 ---
 
-## How it works
-
-This project is divided into three parts:
-1. Backend (server folder)
-2. Frontend (web folder)
-
-### User Stories
+## User Stories
 
     * The API endpoint is GET [project_url]/api/timestamp/:date_string
     
