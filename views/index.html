@@ -12,6 +12,7 @@
     <h1>Timestamp Microservice</h1>
     <hr />
     <div class="container">
+      <p>You can convert from UNIX time to a natural language date, and vice versa.</p>
       <h3>Example Usage:</h3>
       <ul>
         <li><a href="api/2015-12-25">[project url]/api/2015-12-25</a></li>
@@ -23,10 +24,24 @@
         <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
       </p>
     </div>
+
+    <h3>Try here!</h3>
+
+    
+    <form action="/button" method = "post">
+      <input type="text" placeholder="Insert the Date/Unix time"  name="btnConverter" id="btnConverter">
+      <button  id="btn">Go</button>
+    </form>
+    
+   
+
+
     <div class="footer">
       <p>
-        By <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+        By <a href="https://github.com/Gahbr">Gahbr</a>
       </p>
     </div>
+    <script src="../btn.js"></script>
   </body>
 </html>
+

@@ -4,6 +4,10 @@
 // init project
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
+
 require('dotenv').config();
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
@@ -16,7 +20,9 @@ app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (req, res) {
+ 
   res.sendFile(__dirname + '/views/index.html');
+   
 });
 
 
@@ -48,6 +54,10 @@ app.get("/api/:date", (req,res)=>{
   }
   
 })
+
+app.post('/button', (req,res)=>{
+  res.redirect(`/api/${req.body.btnConverter}`)
+  })
 
 
 // listen for requests :)
